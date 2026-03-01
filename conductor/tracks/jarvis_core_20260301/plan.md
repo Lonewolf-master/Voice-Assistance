@@ -20,13 +20,13 @@
   - [ ] Run tests and verify >80% coverage.
 - [x] **Task: Conductor - User Manual Verification 'Phase 2: TTS Module Implementation' (Protocol in workflow.md)** e890361
 
-## Phase 3: Wake-Word Detection Module
+## Phase 3: Wake-Word Detection Module [checkpoint: 71dbff6]
 
 - [x] **Task: Implement Wake-Word Detection** 1a0ef06
   - [ ] Write unit tests for wake-word detection (mocking audio input).
   - [ ] Implement `wake_word.py` using Vosk.
   - [ ] Run tests and verify >80% coverage.
-- [ ] **Task: Conductor - User Manual Verification 'Phase 3: Wake-Word Detection Module' (Protocol in workflow.md)**
+- [x] **Task: Conductor - User Manual Verification 'Phase 3: Wake-Word Detection Module' (Protocol in workflow.md)** 71dbff6
 
 ## Phase 4: System Integration & Voice Assistant Loop
 
