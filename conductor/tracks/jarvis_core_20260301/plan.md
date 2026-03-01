@@ -28,10 +28,10 @@
   - [ ] Run tests and verify >80% coverage.
 - [x] **Task: Conductor - User Manual Verification 'Phase 3: Wake-Word Detection Module' (Protocol in workflow.md)** 71dbff6
 
-## Phase 4: System Integration & Voice Assistant Loop
+## Phase 4: System Integration & Voice Assistant Loop [checkpoint: d0a7a3d]
 
 - [x] **Task: Integrate Components into Main Loop** 151f16b
   - [ ] Create `main.py` to coordinate the flow: Wake-Word -> STT -> Logic -> TTS.
   - [ ] Implement visual indicators for system state (LISTENING, THINKING, SPEAKING).
   - [ ] Perform integration tests to verify the complete loop.
-- [ ] **Task: Conductor - User Manual Verification 'Phase 4: System Integration & Voice Assistant Loop' (Protocol in workflow.md)**
+- [x] **Task: Conductor - User Manual Verification 'Phase 4: System Integration & Voice Assistant Loop' (Protocol in workflow.md)** d0a7a3d
