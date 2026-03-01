@@ -12,13 +12,13 @@
   - [ ] Run tests and verify >80% coverage.
 - [x] **Task: Conductor - User Manual Verification 'Phase 1: Environment Setup & STT Module' (Protocol in workflow.md)** ac3822a
 
-## Phase 2: TTS Module Implementation
+## Phase 2: TTS Module Implementation [checkpoint: e890361]
 
 - [x] **Task: Implement Offline TTS Module** ac3822a
   - [ ] Write unit tests for TTS synthesis functionality (mocking audio output).
   - [ ] Implement `tts.py` using Coqui TTS (local).
   - [ ] Run tests and verify >80% coverage.
-- [ ] **Task: Conductor - User Manual Verification 'Phase 2: TTS Module Implementation' (Protocol in workflow.md)**
+- [x] **Task: Conductor - User Manual Verification 'Phase 2: TTS Module Implementation' (Protocol in workflow.md)** e890361
 
 ## Phase 3: Wake-Word Detection Module
 
