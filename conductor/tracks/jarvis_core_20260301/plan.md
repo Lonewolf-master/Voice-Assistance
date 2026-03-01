@@ -22,7 +22,7 @@
 
 ## Phase 3: Wake-Word Detection Module
 
-- [ ] **Task: Implement Wake-Word Detection**
+- [x] **Task: Implement Wake-Word Detection** 1a0ef06
   - [ ] Write unit tests for wake-word detection (mocking audio input).
   - [ ] Implement `wake_word.py` using Vosk.
   - [ ] Run tests and verify >80% coverage.
