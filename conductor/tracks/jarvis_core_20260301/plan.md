@@ -30,7 +30,7 @@
 
 ## Phase 4: System Integration & Voice Assistant Loop
 
-- [ ] **Task: Integrate Components into Main Loop**
+- [x] **Task: Integrate Components into Main Loop** 151f16b
   - [ ] Create `main.py` to coordinate the flow: Wake-Word -> STT -> Logic -> TTS.
   - [ ] Implement visual indicators for system state (LISTENING, THINKING, SPEAKING).
   - [ ] Perform integration tests to verify the complete loop.
