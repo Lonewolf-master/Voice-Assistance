@@ -1,0 +1,6 @@
+openai-whisper
+TTS
+vosk
+pyaudio
+pytest
+pytest-cov
