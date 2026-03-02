@@ -2,6 +2,7 @@ import vosk
 import pyaudio
 import json
 import os
+import numpy as np
 
 class WakeWordModule:
     """
@@ -46,11 +47,23 @@ class WakeWordModule:
                 if len(data) == 0:
                     break
                 
+                # Energy check to show activity
+                audio_data = np.frombuffer(data, dtype=np.int16)
+                energy = np.abs(audio_data).mean()
+                if energy > 100: # Adjust threshold as needed
+                    print(".", end="", flush=True)
+
                 if self.recognizer.AcceptWaveform(data):
                     result = json.loads(self.recognizer.Result())
                     text = result.get("text", "").lower()
-                    
                     if self.wake_word in text:
+                        return True
+                else:
+                    partial_result = json.loads(self.recognizer.PartialResult())
+                    partial_text = partial_result.get("partial", "").lower()
+                    if self.wake_word in partial_text:
+                        # Clear recognizer before returning
+                        self.recognizer.Reset()
                         return True
         finally:
             # Clean up stream

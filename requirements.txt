@@ -2,5 +2,11 @@ openai-whisper
 TTS
 vosk
 pyaudio
+webrtcvad
+noisereduce
+numpy
+scipy
+transformers
+torch
 pytest
 pytest-cov

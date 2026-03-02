@@ -6,7 +6,7 @@ from tts import TTSModule
 @pytest.fixture
 def tts_module():
     # Use a valid Coqui TTS model name format
-    model_name = "tts_models/en/jenny/vits"
+    model_name = "tts_models/en/jenny/jenny"
     with patch("tts.TTS") as mock_tts_class:
         mock_tts_instance = MagicMock()
         mock_tts_class.return_value = mock_tts_instance
@@ -15,7 +15,7 @@ def tts_module():
 
 def test_tts_initialization(tts_module):
     module, mock_tts = tts_module
-    assert module.model_name == "tts_models/en/jenny/vits"
+    assert module.model_name == "tts_models/en/jenny/jenny"
     assert module.tts == mock_tts
 
 def test_speak(tts_module):

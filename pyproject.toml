@@ -1,0 +1,18 @@
+[project]
+name = "voice-assistance"
+version = "0.1.0"
+description = "A modular offline Speech-to-Text and Text-to-Speech voice assistant with wake-word detection."
+dependencies = [
+    "openai-whisper",
+    "TTS",
+    "vosk",
+    "pyaudio",
+]
+
+[tool.pyright]
+include = ["."]
+exclude = ["**/venv/**", "**/__pycache__/**"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
